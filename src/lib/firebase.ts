@@ -5,12 +5,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAz2pEW8h7msBt-_LwMX1ANhU3pduLaYlg",
-  authDomain: "genshin-calculator-4da5e.firebaseapp.com",
-  projectId: "genshin-calculator-4da5e",
-  storageBucket: "genshin-calculator-4da5e.appspot.com",
-  messagingSenderId: "398255414420",
-  appId: "1:398255414420:web:bd31687fcea57fb646a881"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
